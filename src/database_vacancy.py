@@ -9,7 +9,7 @@ class DBManager:
     def __init__(self, params):
         """ Магически метод отвечающий за инициализацию атрибутов класса """
 
-        self.conn = psycopg2.connect(dbname='postgres', **params)
+        self.conn = psycopg2.connect(dbname='hh_db', **params)
         self.cur = self.conn.cursor()
 
     def get_companies_and_vacancies_count(self):
