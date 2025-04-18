@@ -43,7 +43,7 @@ def create_db(db_name: str, params):
 
 
 def save_data_to_db(data_employer: list[dict[str, Any]], data_vacancies: list[dict[str, Any]],
-                          db_name: str, params: dict):
+                            db_name: str, params: dict):
     """Сохранение данных в базу."""
 
     conn = psycopg2.connect(dbname=db_name, **params)
